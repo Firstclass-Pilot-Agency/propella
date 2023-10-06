@@ -10,6 +10,7 @@ export async function getCategory(callback){
         const fetchData = await axios.get(API_URI, {
         headers: {},
     })
+
         return callback(fetchData.data.category)
     } catch (error) {
         console.log(error)
@@ -23,6 +24,8 @@ export async function createUsers(data, callback, callbackErr){
         const fetchData = await axios.post(API_URI, userData, {
         headers: {},
     })
+        alert(`${fetchData.name} \n You have been added to the waitlist`)
+
         return callback(fetchData)
     } catch (error) {
         return callbackErr(error)
