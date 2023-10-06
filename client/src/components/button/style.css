@@ -1,0 +1,23 @@
+button{
+    background: var(--color-dark);
+    font-family: subText-Bold;
+    color: white;
+    border: none;
+    padding: 15px 28px;
+    font-size: 16px;
+    border-radius: 14px;
+    text-transform: capitalize;
+}
+
+.secondary-bttn{
+    background: var(--color-primary);
+
+}
+.primary-bttn{
+    background: black;
+
+}
+
+@media screen and (max-width: 600px) {
+
+}

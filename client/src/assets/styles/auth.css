@@ -1,0 +1,239 @@
+.authPage{
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.authtextArea{
+    margin: 100px 10px 0;
+
+}
+.authWrapText{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.authBttnWrap{
+    padding-top: 50px;
+}
+.subtext-simLayout p{
+    padding-top: 140px;
+    width: 500px;
+}
+
+.auth-boximg{
+    background: rgb(0, 0, 0);
+    border-radius: 30px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.authText{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    top: 0;
+    background: rgba(0, 0, 0, 0.212);
+    color: white;
+}
+.authTextWrap{
+    padding: 70px;
+}
+.textFact{
+    padding-bottom: 15px;
+    color: var(--color-primary);
+    font-weight: 900;
+}
+
+.bigStar-auth .starRot:hover{
+    transform: rotateZ(360deg);
+    transition: 2s;
+}
+
+.bigStar-auth .start1-auth{
+    width: 450px;
+    position: absolute;
+    right: -60px;
+    top: 400px;
+    transform: rotateZ(-360deg);
+    transition: 2s;
+    z-index: 2;
+}
+
+
+.auttTopImg-auth{
+    background: url(https://images.unsplash.com/photo-1579880651719-3cef00eae7de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80);
+    height: 100%;
+    background-size: cover;
+    background-position-y: -30vh;
+}
+
+/* Auth Popup */
+.sign{
+    height: 100vh;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 8;
+}
+.authSpot{
+    position: relative;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    width: 900px;
+    background: white;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.205);
+    overflow: hidden;
+}
+.imgSec{
+    overflow: hidden;
+}
+.authSpot img{
+    width: 200%;
+}
+.authFormSec{
+    padding: 20px 60px 40px 40px;
+    margin: 40px 0;
+    width: 800px;
+    overflow-y: scroll;
+}
+.authFormSec::-webkit-scrollbar{
+    display: none;
+}
+.imgSec{
+    width: 100%;
+    background: black;
+}
+.formtext h1{
+    font-size: 40px;
+    line-height: initial;
+}
+.formtext p{
+    font-size: 20px;
+    line-height: initial;
+}
+.authclose{
+    height: 28px;
+    width: 28px;
+    background: black;
+    border-radius: 10000px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.authForm{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.formInfo p{
+    font-size: 15px;
+    color: var(--color-primary);
+}
+.formInput{
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.formInput input{
+    padding: 8px 13px;
+    font-size: 13px;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 140px;
+}
+
+.formInput select{
+    padding: 8px 13px;
+    font-size: 13px;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 140px;
+    text-transform: capitalize;
+}
+
+.error{
+    font-size: 12px;
+    color: red;
+}
+
+
+
+@media screen and (max-width:600px) {
+    .formInput input{
+        padding: 8px 18px;
+        font-size: 15px;
+        outline: none;
+        border: 2px solid black;
+        border-radius: 8px;
+        width: 100%;
+    }
+    .formInput select{
+        padding: 8px 18px;
+        font-size: 15px;
+        outline: none;
+        border: 2px solid black;
+        border-radius: 8px;
+        width: 100%;
+    }
+    .authWrapText {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .subtext-simLayout p {
+        padding-top: 40px;
+        width: 100%;
+    }
+    .extras{
+        display: none;
+    }
+    .auth-boximg {
+        height: 344px;
+        margin-top: 30px;
+    }
+    .authtextArea {
+        margin: 54px 10px 0;
+    }
+    .authTextWrap {
+        padding: 50px 30px;
+    }
+    .authTextWrap p{
+        text-align: initial;
+        
+    }
+    .imgSec {
+        display: none;
+    }
+    .authSpot {
+        background: red;
+        height: 80vh;
+        width: 100%;
+        background: white;
+        border-radius: 0;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0);
+    }
+    .authFormSec {
+        padding: 56px 38px;
+        width: 100%;
+        overflow-y: scroll;
+    }
+    .authSpot {
+        margin-top: 44px;
+        height: 100vh;
+    }
+}
