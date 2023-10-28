@@ -79,7 +79,7 @@ const createUser = async (req, res) => {
 		name,
 		bussinessName,
 		shopNumber: parseInt(shopNumber),
-
+		shopType
 
 	});
 
